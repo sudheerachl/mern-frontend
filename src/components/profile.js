@@ -19,7 +19,7 @@ const ProfilePage = () => {
           <Route path='/info-doctor' component={Infouser} />
           <Route path='/update-doctor' component={Updateuser} />
           <Route path='/delete-doctor' component={Deleteuser} />
-          <Route path='/' component={Logout} />
+         
         </div>
       </div>
     </Router>
