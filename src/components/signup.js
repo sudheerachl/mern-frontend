@@ -39,7 +39,7 @@ function Signupuser = () => {
         }
 
         alert('Registered successfully! Please Login to proceed.');
-        navigate('/login-user');
+        navigate('/signin');
       })
       .catch((err) => console.log(err));
   };
@@ -67,7 +67,7 @@ function Signupuser = () => {
             </li>
             
             <li>
-              <Link className="active" to="/signin">
+              <Link className="active" to="/signup">
                 Sign Up
               </Link>
             </li>
@@ -194,7 +194,7 @@ function Signupuser = () => {
 </form>
 
 <p>Already have an account?</p>
-<Link to="/login-user">Login</Link>
+<Link to="/signin">Login</Link>
 </div>
 </div>
 
