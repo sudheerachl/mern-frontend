@@ -1,29 +1,37 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar1 from './navbar1';
-import VerticalNavbar from './vnuser';
-import Updateuser from './updateuser';
-import Deleteuser from './deleteuser';
-import Infouser from './infouser';
 
 const ProfilePage = () => {
-  const [selectedOption, setSelectedOption] = useState('/info-doctor');
+  const navigate = useNavigate();
+
+  const buttonStyle = {
+    margin: '10px',
+    padding: '10px',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    borderRadius: '5px',
+    textDecoration: 'none',
+    display: 'inline-block',
+    textAlign: 'center',
+  };
 
   return (
-    <Router>
       <div className="profile-page">
         <Navbar1 />
-        <VerticalNavbar />
-        <div className="main-content">
-          {/* Content based on the selected option */}
-          <Route path='/info-doctor' component={Infouser} />
-          <Route path='/update-doctor' component={Updateuser} />
-          <Route path='/delete-doctor' component={Deleteuser} />
-         
-        </div>
-      </div>
-    </Router>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Login Success Page</h1>
+      <Link to='/Homepage' style={buttonStyle}>Logout</Link>
+      <Link to='/deleteuser' style={buttonStyle}>Delete Doctor</Link>
+      <Link to='/updateuser' style={buttonStyle}>Edit Doctor</Link>
+      <Link to='/infouser' style={buttonStyle}>View Doctor Info</Link>
+    </div>
+</div>
   );
-};
+}
+
+
 
 export default ProfilePage;
