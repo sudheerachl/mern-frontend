@@ -4,19 +4,17 @@ import Nav from 'react-bootstrap/Nav';
 //import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from './navbar';
 import Navbar1 from './navbar1';
-
+import Infodoctor from './Infodoctor'; 
+import './profile.css'; 
 export function Nave() {
   return (
     <div id='main'>
         <Navbar1 />
         
     
-    <div className='profile'>
-        <h1>
-            Profile
-        </h1>
-        
-    </div>
+   <div className='profile'>
+        <Infodoctor />
+      </div>
     <hr/>
     <div className='apply'>
         <h4> Please mention the issue you are facing :</h4><br/>
