@@ -30,9 +30,9 @@ function App() {
           <Route path='/dashboard' element={<Nave />} />
           <Route path='/chats' element={<Testing />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
-          <Route path='/infodoctor' element={<Infouser/>} />
-          <Route path='/deletedoctor' element={<Deleteuser/>} />
-          <Route path='/updatedoctor' element={<Updateuser/>} />
+          <Route path='/infouser' element={<Infouser/>} />
+          <Route path='/deleteuser' element={<Deleteuser/>} />
+          <Route path='/updateuser' element={<Updateuser/>} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/quiz2' element={<Quiz2 />} />
           
