@@ -14,7 +14,7 @@ import '../test.css';
     axios.get(`https://backend-user-bms6.onrender.com/getDiseases/${username}`)
       .then(response => {
         if(response.data.message=='User not found'){
-          aler('User not found');}
+          alert('User not found');}
         else if(response.data === "Diseases fetched successfully"){
         setDiseases(response.data.diseases);
         alert('Diseases fetched successfully!');
