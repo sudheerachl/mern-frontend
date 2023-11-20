@@ -8,7 +8,7 @@ const Infodoctor = () => {
 
   useEffect(() => {
     if (username) {
-      axios.get(`https://backend-user-bms6.onrender.com/info-doctor/${username}`)
+      axios.get(`https://backend-user-bms6.onrender.com/info-user/${username}`)
         .then((response) => {
           console.log(response.data);
           setUserDetails(response.data);
