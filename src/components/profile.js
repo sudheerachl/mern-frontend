@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Navbar1 from './Navbar1';
-import VerticalNavbar from './VerticalNavbar';
-import Successdoctor from './Successdoctor';
-import Infodoctor from './Infodoctor';
+import Navbar1 from './navbar1';
+import VerticalNavbar from './vnuser';
+import Updateuser from './updateuser';
+import Deleteuser from './deleteuser';
+import Infouser from './infouser';
 
 const ProfilePage = () => {
   const [selectedOption, setSelectedOption] = useState('/info-doctor');
@@ -15,9 +16,9 @@ const ProfilePage = () => {
         <VerticalNavbar />
         <div className="main-content">
           {/* Content based on the selected option */}
-          <Route path='/info-doctor' component={Infodoctor} />
-          <Route path='/delete-doctor' component={DeleteDoctor} />
-          <Route path='/update-doctor' component={UpdateDoctor} />
+          <Route path='/info-doctor' component={Infouser} />
+          <Route path='/update-doctor' component={Updateuser} />
+          <Route path='/delete-doctor' component={Deleteuser} />
           <Route path='/' component={Logout} />
         </div>
       </div>
