@@ -15,7 +15,7 @@ const Updateuser = () => {
     event.preventDefault();
 
     try {
-      const result = await axios.post('https://backend-user-bms6.onrender.com/update-doctor', {
+      const result = await axios.post('https://backend-user-bms6.onrender.com/update-user', {
         name,
         username,
         phoneNumber,
@@ -26,7 +26,7 @@ const Updateuser = () => {
 
       if (result.data.message === 'Doctor information updated successfully') {
         alert('Update successful!');
-        navigate('/profile-doctor');
+        navigate('/profileuser');
       } else {
         alert('Incorrect password! Please try again.');
       }
