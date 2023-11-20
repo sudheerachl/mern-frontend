@@ -22,7 +22,7 @@ function App() {
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/healthproblems' element={<HealthProblems/>} />
           <Route path='/healthbot' element={<Healthbot />} />
-          <Route path='/signup' element={<Signin />} />
+          <Route path='/signup' element={<Signupuser />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/dashboard' element={<Nave />} />
           <Route path='/chats' element={<Testing />} />
