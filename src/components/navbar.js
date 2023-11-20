@@ -28,6 +28,8 @@ function Navbar() {
              
             </ul>
             <Link className="btn btn-primary" to="/signin" role="button">Sign in</Link>
+             </ul>
+            <Link className="btn btn-primary" to="/signup" role="button">     Sign up</Link>
           </div>
         </div>
       </nav>
