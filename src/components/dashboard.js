@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from './navbar';
 import Navbar1 from './navbar1';
 import Infodoctor from './info'; 
-import './profile.css'; 
+
 export function Nave() {
   return (
     <div id='main'>
