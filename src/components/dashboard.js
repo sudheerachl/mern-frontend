@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar1 from './navbar1'; // Import Navbar1 if not already imported
 import './Home.css'; 
+import axios from 'axios';
 export function Nave() {
   const [quoteIndex, setQuoteIndex] = useState(0);
   const [diseaseName, setDiseaseName] = useState('');
