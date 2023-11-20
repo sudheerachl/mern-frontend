@@ -1,0 +1,86 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.quote-section,
+.quiz-section,
+.disease-form-section {
+  margin-bottom: 20px;
+}
+
+.quote-section h2,
+.quiz-section h2,
+.disease-form-section h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.quote-section p,
+.quiz-section p {
+  color: #666;
+  font-size: 18px;
+}
+
+.quiz-section,
+.disease-form-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.quiz-section .quiz-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.quiz-section .quiz-button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the form section */
+.disease-form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.disease-form-section label {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.disease-form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.disease-form-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.disease-form-section button:hover {
+  background-color: #0056b3;
+}
