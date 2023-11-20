@@ -1,10 +1,10 @@
-import React, { useEffect,useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Navbar1 from './navbar1';
 import '../test.css';
-import axios from 'axios';
 
  const username = localStorage.getItem('username');
  const [as, setDiseases] = useState([]);
@@ -15,7 +15,7 @@ import axios from 'axios';
       .then(response => {
         if(response.data.message=='User not found'){
           aler('User not found');}
-        else if(result.data === "Diseases fetched successfully"){
+        else if(response.data === "Diseases fetched successfully"){
         setDiseases(response.data.diseases);
         alert('Diseases fetched successfully!');
       }
