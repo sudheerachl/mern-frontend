@@ -32,32 +32,32 @@ const Deleteuser = () => {
   };
 
   return (
-    React.createElement('div', null,
-      React.createElement('h2', null, 'Delete User'),
-      React.createElement('form', { onSubmit: handleSubmit },
-        React.createElement('label', { htmlFor: 'username' }, 'Username:'),
-        React.createElement('input', {
-          type: 'text',
-          id: 'username',
-          placeholder: 'Enter username',
-          value: username,
-          onChange: (event) => setUsername(event.target.value),
-          required: true,
-        }),
-        React.createElement('br'),
-        React.createElement('label', { htmlFor: 'password' }, 'Password:'),
-        React.createElement('input', {
-          type: 'password',
-          id: 'password',
-          placeholder: 'Enter password',
-          value: password,
-          onChange: (event) => setPassword(event.target.value),
-          required: true,
-        }),
-        React.createElement('br'),
-        React.createElement('button', { type: 'submit' }, 'Delete Your Account')
-      )
-    )
+   <div>
+      <h2>Delete User</h2>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter username"
+          value={username}
+          onChange={(event) => setUsername(event.target.value)}
+          required
+        />
+        <br />
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password"
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+          required
+        />
+        <br />
+        <button type="submit">Delete Your Account</button>
+      </form>
+    </div>
   );
 };
 
