@@ -1,7 +1,40 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from "react-router-dom";
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-function Signin() {
+
+const Signin = () => {
+    const [username, setUsername] = useState();
+    const [password, setPassword] = useState();
+    const navigate = useNavigate();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        
+        axios.post( 'https://backend-user-bms6.onrender.com/login-user', {username, password})
+        .then(result => {
+            console.log(result);
+            if(result.data === "Success"){
+                console.log("Login Success");
+                alert('Login successful!')
+                navigate('/dashboard');
+            }
+            else if(result.data.message === "Wrong password"){
+                alert('Incorrect password! Please try again.');
+            }
+            else if(result.data.message === "User not found"){
+                alert('Username not found');
+            }
+            else{
+                 alert('error');}
+                
+        })
+        .catch(err => console.log(err));
+    }
+
+
+    
   return (
     <div>
       <>
@@ -30,23 +63,34 @@ function Signin() {
             </li>
           </ul>
         </div>
-        <form action="">
-          <div className="container">
-            <h3>Sign Up</h3>
-            <hr />
-            <label htmlFor="email">
-              <b>Email</b>
-            </label>
-            <input type="email" placeholder="Your Email" name="email" required />
-            <label htmlFor="psd">
-              <b>Password</b>
-            </label>
-            <input type="password" placeholder="Your Password" name="psd" required />
-            <label htmlFor="remember">
-              <input type="checkbox" checked={true} name="remember" /> <b>Remember Me</b>
-            </label>
-            <button type="submit">Sign Up</button>
-          </div>
+       <form onSubmit={handleSubmit}>
+                        <div className="container">
+                            <label htmlFor="exampleInputUsername1" >
+                                <strong>Username</strong>
+                            </label>
+                            <input 
+                                type="text" 
+                                placeholder="Enter Username"
+                                className="form-control" 
+                                id="exampleInputUsername1" 
+                                onChange={(event) => setUsername(event.target.value)}
+                                required
+                            /> 
+                        </div>
+                        <div >
+                            <label htmlFor="exampleInputPassword1" >
+                                <strong>Password</strong>
+                            </label>
+                            <input 
+                                type="password" 
+                                placeholder="Enter Password"
+                                className="form-control" 
+                                id="exampleInputPassword1" 
+                                onChange={(event) => setPassword(event.target.value)}
+                                required
+                            />
+                        </div>
+                        <button type="submit" >Login</button>
         </form>
       </>
     </div>
