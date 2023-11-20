@@ -7,25 +7,21 @@
   text-align: center;
 }
 
-.quote-section,
-.quiz-section,
-.disease-form-section {
-  margin-bottom: 20px;
+.quote-section {
+  margin-bottom: 40px; /* Increased margin for emphasis */
 }
 
-.quote-section h2,
-.quiz-section h2,
-.disease-form-section h2 {
+.quote-section h2 {
   color: #333;
-  font-size: 24px;
+  font-size: 36px; /* Larger font size for the quote heading */
+  margin-bottom: 20px; /* Added margin for separation from the quote */
 }
 
-.quote-section p,
-.quiz-section p {
-  color: #666;
-  font-size: 18px;
+.quote-section p {
+  color: #007bff; /* Blue color for the quote text */
+  font-size: 24px; /* Larger font size for the quote text */
+  font-weight: bold; /* Added bold styling for emphasis */
 }
-
 .quiz-section,
 .disease-form-section {
   background-color: #f9f9f9;
