@@ -1,11 +1,9 @@
-
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 
-function Signupuser(){
-  const [name, setName] = useState(''); // Added empty strings to initialize state variables
+function SignupUser() {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
@@ -16,7 +14,8 @@ function Signupuser(){
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post('https://backend-user-bms6.onrender.com/signup-user', {
+    axios
+      .post('https://backend-user-bms6.onrender.com/signup-user', {
         name,
         username,
         phoneNumber,
@@ -44,37 +43,34 @@ function Signupuser(){
   };
 
   return (
-   
     <div>
-      <>
-        <h1>
-          <Link to="/">Mind Mendor</Link>
-        </h1>
-        <div className="navBar sticky">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/blogs">Blogs</Link>
-            </li>
-            <li>
-              <Link to="/healthproblems">Health Problems</Link>
-            </li>
-            <li>
-              <Link to="/quiz2">Quiz</Link>
-            </li>
-            
-            <li>
-              <Link className="active" to="/signup">
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-        </div>
-       <div>
-          <h2>Register</h2>
-          <form onSubmit={handleSubmit}>
+      <h1>
+        <Link to="/">Mind Mendor</Link>
+      </h1>
+      <div className="navBar sticky">
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/healthproblems">Health Problems</Link>
+          </li>
+          <li>
+            <Link to="/quiz2">Quiz</Link>
+          </li>
+          <li>
+            <Link className="active" to="/signup">
+              Sign Up
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Register</h2>
+       <form onSubmit={handleSubmit}>
             <div className="mb-3 text-start">
               <label htmlFor="exampleInputEmail1">
                 <strong>Name</strong>
@@ -190,13 +186,14 @@ function Signupuser(){
 </div>
 <button type="submit">Register</button>
 </form>
-
-<p>Already have an account?</p>
-<Link to="/signin">Login</Link>
-</div>
-
-
-);
+    
+        <p>Already have an account?</p>
+        <Link to="/signin">Login</Link>
+      </div>
+    </div>
+  );
 }
 
-export default Signupuser
+export default SignupUser;
+
+
