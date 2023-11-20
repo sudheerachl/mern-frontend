@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function Signupuser = () => {
+function Signupuser(){
   const [name, setName] = useState(''); // Added empty strings to initialize state variables
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
