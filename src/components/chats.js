@@ -20,7 +20,7 @@ import axios from 'axios';
         alert('Diseases fetched successfully!');
       }
         else{alert('error');}
-          )
+      })
       .catch(error => {
         console.error('Error fetching diseases:', error);
         // Handle error as needed
