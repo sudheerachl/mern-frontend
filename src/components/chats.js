@@ -32,6 +32,7 @@ const Testing = () => {
   return (
     <>
       <Navbar1 />
+      
       <div className="classcontain">
         {diseases.map((disease) => (
           <Card className="card" key={disease}>
@@ -42,13 +43,14 @@ const Testing = () => {
               </Card.Text>
               <Link to={`https://client1-1y5xralsc-sri-1203s-projects.vercel.app/chat?name=${username}&room=${disease}`}>
                 <Button className="btn" variant="primary">
-                  Join
+                  Join 
                 </Button>
               </Link>
             </Card.Body>
           </Card>
         ))}
       </div>
+          <p> https://client1-1y5xralsc-sri-1203s-projects.vercel.app/chat?name=${username}&room=${disease}</p>
     </>
   );
 };
