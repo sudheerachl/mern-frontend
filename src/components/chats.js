@@ -46,6 +46,7 @@ const Testing = () => {
                   Join 
                 </Button>
               </Link>
+             <p>URL: https://client1-1y5xralsc-sri-1203s-projects.vercel.app/chat?name=${username}&room=${disease}</p>
             </Card.Body>
           </Card>
         ))}
