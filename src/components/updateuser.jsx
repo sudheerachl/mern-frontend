@@ -34,13 +34,14 @@ const Updateuser = () => {
       console.error('Error updating doctor information:', error);
     }
   };
+
   return (
     <div>
       <div>
         <div>
           <h2>Register</h2>
           <form onSubmit={handleSubmit}>
-            
+
             <div className="mb-3 text-start">
               <label htmlFor="exampleInputUsername">
                 <strong>Username</strong>
@@ -52,7 +53,7 @@ const Updateuser = () => {
                 id="exampleInputusername"
                 onChange={(event) => setUsername(event.target.value)}
                 required
-              /> 
+              />
             </div>
             <div>
               <label htmlFor="exampleInputPassword1">
@@ -78,7 +79,7 @@ const Updateuser = () => {
                 id="exampleInputname"
                 onChange={(event) => setName(event.target.value)}
                 required
-              /> 
+              />
             </div>
             <div>
               <label htmlFor="exampleInputEmail1">
@@ -91,7 +92,7 @@ const Updateuser = () => {
                 id="exampleInputEmail1"
                 onChange={(event) => setEmail(event.target.value)}
                 required
-              /> 
+              />
             </div>
             <div className="mb-3">
               <label htmlFor="exampleInputGender">
@@ -126,41 +127,39 @@ const Updateuser = () => {
                 </label>
               </div>
               <div className="form-check">
-  <input
-    className="form-check-input"
-    type="radio"
-    id="otherRadio"
-    name="gender"
-    value="Other"
-    onChange={(event) => setGender(event.target.value)}
-    required
-  />
-  <label className="form-check-label" htmlFor="otherRadio">
-    Other
-  </label>
-</div>
-</div>
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  id="otherRadio"
+                  name="gender"
+                  value="Other"
+                  onChange={(event) => setGender(event.target.value)}
+                  required
+                />
+                <label className="form-check-label" htmlFor="otherRadio">
+                  Other
+                </label>
+              </div>
+            </div>
 
-<div>
-  <label htmlFor="exampleInputPhoneNumber">
-    <strong>PhoneNumber</strong>
-  </label>
-  <input
-    type="PhoneNumber"
-    placeholder="Enter PhoneNumber"
-    className="form-control"
-    id="exampleInputPhoneNumber"
-    onChange={(event) => setPhoneNumber(event.target.value)}
-    required
-  />
-</div>
-<button type="submit">Register</button>
-</form>
-
-</div>
-</div>
-</div>
-)
+            <div>
+              <label htmlFor="exampleInputPhoneNumber">
+                <strong>PhoneNumber</strong>
+              </label>
+              <input
+                type="PhoneNumber"
+                placeholder="Enter PhoneNumber"
+                className="form-control"
+                id="exampleInputPhoneNumber"
+                onChange={(event) => setPhoneNumber(event.target.value)}
+                required
+              />
+            </div>
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }
-
 export default Updateuser
