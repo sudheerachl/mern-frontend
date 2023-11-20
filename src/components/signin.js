@@ -17,7 +17,8 @@ const Signin = () => {
             console.log(result);
             if(result.data === "Success"){
                 console.log("Login Success");
-                alert('Login successful!')
+            localStorage.setItem('username', username);
+              alert(`Login successfull: ${username}`);
                 navigate('/dashboard');
             }
             else if(result.data.message === "Wrong password"){
