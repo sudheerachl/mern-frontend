@@ -196,7 +196,7 @@ function Signupuser(){
 </div>
 
 
-)
+);
 }
 
 export default Signupuser
