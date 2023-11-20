@@ -51,7 +51,7 @@ const Testing = () => {
           </Card>
         ))}
       </div>
-          <p> https://client1-1y5xralsc-sri-1203s-projects.vercel.app/chat?name=${username}&room=${disease}</p>
+      
     </>
   );
 };
