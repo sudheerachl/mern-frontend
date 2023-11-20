@@ -18,30 +18,31 @@ export function Nave() {
     setDiseaseName(e.target.value);
   };
 const username = localStorage.getItem('username');
- const handleSubmit = (e) => {
-    e.preventDefault();
+const handleSubmit = (e) => {
+  e.preventDefault();
 
-    // Send both username and diseaseName to the backend
-    axios.post('https://backend-user-bms6.onrender.com/addDisease', { username, disease: diseaseName })
-      .then(response => {
-        console.log(response.data);
-          if(result.data.message === "Disease added successfully"){
-                console.log("Disease added successfully");
-              alert(`Disease added successfully`);
-            }
-         else if (result.data.message === 'Disease already exists for this user') {
-          alert('Disease already exists for this user.');
-        } else if (result.data.message === 'User not found') {
-          alert('Username not found');
-        } else {
-          console.error('Error logging in');
-        }
-      })
-      .catch(error => {
-        console.error('Error adding disease:', error);
-        // You can handle errors or display an error message to the user here
-      });
-  };
+  // Send both username and diseaseName to the backend
+  axios.post('https://backend-user-bms6.onrender.com/addDisease', { username, disease: diseaseName })
+    .then(response => {
+      console.log(response.data);
+      if (response.data.message === "Disease added successfully") {
+        console.log("Disease added successfully");
+        alert(`Disease added successfully`);
+      } else if (response.data.message === 'Disease already exists for this user') {
+        alert('Disease already exists for this user.');
+      } else if (response.data.message === 'User not found') {
+        alert('Username not found');
+      } else {
+        console.error('Error logging in');
+      }
+    })
+    .catch(error => {
+      console.error('Error adding disease:', error);
+      // You can handle errors or display an error message to the user here
+    });
+};
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
