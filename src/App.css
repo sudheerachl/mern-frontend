@@ -140,10 +140,10 @@ button{
   background-color: blue;
   color: white;
   padding: 15px 20px;
-  margin: 30px 30px;
+  margin: 10px 30px;
   border: none;
   cursor: pointer;
-  width: 75%;
+  width: 100%;
   opacity: 0.8;
 }
 button:hover{
