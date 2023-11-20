@@ -16,8 +16,7 @@ function Signupuser = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios
-      .post('https://backend-user-bms6.onrender.com/signup-user', {
+    axios.post('https://backend-user-bms6.onrender.com/signup-user', {
         name,
         username,
         phoneNumber,
