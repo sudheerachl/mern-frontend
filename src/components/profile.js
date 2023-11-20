@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar1 from './navbar1';
-
+import { Link } from "react-router-dom";
 const ProfilePage = () => {
   const navigate = useNavigate();
 
