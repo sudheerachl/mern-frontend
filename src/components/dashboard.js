@@ -16,11 +16,20 @@ export function Nave() {
   const handleInputChange = (e) => {
     setDiseaseName(e.target.value);
   };
-
-  const handleSubmit = (e) => {
+const username = localStorage.getItem('username');
+ const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your logic to handle the form submission (e.g., send data to server)
-    console.log(`Submitted disease name: ${diseaseName}`);
+
+    // Send both username and diseaseName to the backend
+    axios.post('https://backend-user-bms6.onrender.com/addDisease', { username, disease: diseaseName })
+      .then(response => {
+        console.log(response.data);
+        
+      })
+      .catch(error => {
+        console.error('Error adding disease:', error);
+        // You can handle errors or display an error message to the user here
+      });
   };
 
   useEffect(() => {
