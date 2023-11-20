@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Navbar1 from './navbar1';
 import '../test.css';
+import axios from 'axios';
 
  const username = localStorage.getItem('username');
  const [as, setDiseases] = useState([]);
