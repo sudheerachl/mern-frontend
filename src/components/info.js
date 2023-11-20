@@ -1,6 +1,6 @@
-const React = require('react');
-const { useState, useEffect } = require('react');
-const axios = require('axios');
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 const Infodoctor = () => {
   const [userDetails, setUserDetails] = useState(null);
