@@ -72,8 +72,7 @@ function Signupuser(){
             </li>
           </ul>
         </div>
-      <div>
-        <div>
+       <div>
           <h2>Register</h2>
           <form onSubmit={handleSubmit}>
             <div className="mb-3 text-start">
@@ -195,7 +194,7 @@ function Signupuser(){
 <p>Already have an account?</p>
 <Link to="/signin">Login</Link>
 </div>
-</div>
+
 
 )
 }
