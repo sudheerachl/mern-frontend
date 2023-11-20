@@ -41,7 +41,7 @@ const Testing = () => {
               <Card.Text className="card-text">
                 Join here to communicate with others.
               </Card.Text>
-              <Link to={`https://client1-1y5xralsc-sri-1203s-projects.vercel.app/chat?name=${username}&room=${disease}`}>
+              <Link to={`https://client1-nine.vercel.app/chat?name=${username}&room=${disease}`}>
                 <Button className="btn" variant="primary">
                   Join 
                 </Button>
