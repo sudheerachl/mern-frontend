@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import React from 'react';
 
 const Infodoctor = () => {
   const [userDetails, setUserDetails] = useState(null);
@@ -36,4 +36,4 @@ useEffect(() => {
   );
 };
 
-module.exports = Infodoctor;
+export default Infodoctor;
