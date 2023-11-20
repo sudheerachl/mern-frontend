@@ -71,7 +71,7 @@ function SignupUser() {
       <div>
         <h2>Register</h2>
        <form onSubmit={handleSubmit}>
-            <div className="mb-3 text-start">
+           <div className="container">
               <label htmlFor="exampleInputEmail1">
                 <strong>Name</strong>
               </label>
@@ -84,7 +84,7 @@ function SignupUser() {
                 required
               /> 
             </div>
-            <div>
+            <div className="container">
               <label htmlFor="exampleInputEmail1">
                 <strong>Email Id</strong>
               </label>
@@ -97,7 +97,7 @@ function SignupUser() {
                 required
               /> 
             </div>
-            <div className="mb-3 text-start">
+            <div className="container">
               <label htmlFor="exampleInputUsername">
                 <strong>Username</strong>
               </label>
@@ -110,7 +110,7 @@ function SignupUser() {
                 required
               /> 
             </div>
-            <div>
+            <div className="container">
               <label htmlFor="exampleInputPassword1">
                 <strong>Password</strong>
               </label>
@@ -123,7 +123,7 @@ function SignupUser() {
                 required
               />
             </div>
-            <div className="mb-3">
+            <div className="container">
               <label htmlFor="exampleInputGender">
                 <strong>Gender</strong>
               </label>
@@ -171,7 +171,7 @@ function SignupUser() {
 </div>
 </div>
 
-<div>
+<div className="container">
   <label htmlFor="exampleInputPhoneNumber">
     <strong>PhoneNumber</strong>
   </label>
