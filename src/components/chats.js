@@ -18,7 +18,7 @@ const Testing = () => {
           alert('User not found');
         } else if (response.data.message === 'Diseases fetched successfully') {
           setDiseases(response.data.diseases);
-          alert('Diseases fetched successfully!');
+         
         } else {
           alert('Error fetching diseases');
         }
