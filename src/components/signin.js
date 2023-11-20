@@ -77,7 +77,7 @@ const Signin = () => {
                                 required
                             /> 
                         </div>
-                        <div >
+                        <div className="container">
                             <label htmlFor="exampleInputPassword1" >
                                 <strong>Password</strong>
                             </label>
