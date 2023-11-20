@@ -12,6 +12,9 @@ import Testing from './components/chats';
 import HealthProblems1 from './components/healthproblems1';
 import Profile from './components/profile';
 import Quiz2 from './components/quiz2';
+import Infouser from './components/infouser';
+import Updateuser from './components/updateuser';
+import Deleteuser from './components/deleteuser';
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
           <Route path='/dashboard' element={<Nave />} />
           <Route path='/chats' element={<Testing />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
+          <Route path='/infodoctor' element={<Infouser/>} />
+          <Route path='/deletedoctor' element={<Deleteuser/>} />
+          <Route path='/updatedoctor' element={<Updateuser/>} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/quiz2' element={<Quiz2 />} />
           
