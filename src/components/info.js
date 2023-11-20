@@ -6,18 +6,22 @@ const Infodoctor = () => {
   const [userDetails, setUserDetails] = useState(null);
   const username = localStorage.getItem('username');
 
-  useEffect(() => {
-    if (username) {
-      axios.get(`https://backend-user-bms6.onrender.com/info-user/${username}`)
-        .then((response) => {
-          console.log(response.data);
-          setUserDetails(response.data);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get(`https://backend-user-bms6.onrender.com/info-user/${username}`);
+      console.log(response.data);
+      setUserDetails(response.data);
+    } catch (error) {
+      console.error(error);
     }
-  }, [username]);
+  };
+
+  if (username) {
+    fetchData();
+  }
+}, [username]);
+
 
   if (!userDetails) {
     return React.createElement('div', null, 'Loading user details...');
