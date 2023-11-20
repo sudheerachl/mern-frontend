@@ -61,6 +61,9 @@ function SignupUser() {
           <li>
             <Link to="/quiz2">Quiz</Link>
           </li>
+     <li>
+            <Link to="/signin">Signin</Link>
+          </li>
           <li>
             <Link className="active" to="/signup">
               Sign Up
@@ -186,9 +189,7 @@ function SignupUser() {
 </div>
 <button type="submit">Register</button>
 </form>
-    
-        <p>Already have an account?</p>
-        <Link to="/signin">Login</Link>
+ 
       </div>
     </div>
   );
