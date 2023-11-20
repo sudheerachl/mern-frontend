@@ -5,6 +5,7 @@ import Blogs from './components/blogs';
 import HealthProblems from './components/healthproblems';
 import Healthbot from './components/healthbot';
 import Signin from './components/signin';
+import Signupuser from './components/signup';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Nave } from './components/dashboard';
 import Testing from './components/chats';
@@ -21,7 +22,7 @@ function App() {
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/healthproblems' element={<HealthProblems/>} />
           <Route path='/healthbot' element={<Healthbot />} />
-          
+          <Route path='/signup' element={<Signin />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/dashboard' element={<Nave />} />
           <Route path='/chats' element={<Testing />} />
