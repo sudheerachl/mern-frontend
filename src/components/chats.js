@@ -5,9 +5,26 @@ import Card from 'react-bootstrap/Card';
 import Navbar1 from './navbar1';
 import '../test.css';
 
-const username = 'sri';
-const as = ['aa', 'bb', 'bbb', 'bbbbbfvsb'];
+ const username = localStorage.getItem('username');
+ const [as, setDiseases] = useState([]);
 
+  useEffect(() => {
+    // Fetch diseases for the given username from the backend
+    axios.get(`https://backend-user-bms6.onrender.com/getDiseases/${username}`)
+      .then(response => {
+        if(response.data.message=='User not found'){
+          aler('User not found');}
+        else if(result.data === "Diseases fetched successfully"){
+        setDiseases(response.data.diseases);
+        alert('Diseases fetched successfully!');
+      }
+        else{alert('error');}
+          )
+      .catch(error => {
+        console.error('Error fetching diseases:', error);
+        // Handle error as needed
+      });
+  }, [username]);
 const Testing = () => {
   useEffect(() => {
     // Add the link element to dynamically apply the test.css styles
