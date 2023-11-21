@@ -37,7 +37,7 @@ const Signup = () => {
           express your feelings, share your experiences, and find comfort in
           knowing that you're not alone. Together, you can uplift each other and
           find strength in shared understanding.</p>
-                   <a href="/signupuser"  className="btn btn-primary">Read More</Link>
+                   <a href="/signupuser"  className="btn btn-primary">Join Now</>
                   </div>
                 </div>
               </div>
