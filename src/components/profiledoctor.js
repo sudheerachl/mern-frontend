@@ -57,7 +57,7 @@ const Profiledoctor = () => {
 
   return (
     <div className="profile-page">
-      <Navbar1 />
+      <Navbar2 />
       <div style={{ textAlign: 'center', marginTop: '50px' }}>
         <Link to='/' onClick={() => handleContentChange('loginSuccess')} style={buttonStyle}>
           Logout
