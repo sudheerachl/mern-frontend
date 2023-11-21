@@ -40,7 +40,7 @@ return (
       </p>
     </div>
 
-    <div className="card-container">
+     <div className="classcontain">
       {diseases.map((disease) => (
         <Card className="card" key={disease}>
           <Card.Body>
