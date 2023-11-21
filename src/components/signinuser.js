@@ -19,7 +19,7 @@ const Signinuser = () => {
                 console.log("Login Success");
             localStorage.setItem('username', username);
               alert(`Login successfull: ${username}`);
-                navigate('/dashboard');
+                navigate('/dashboarduser');
             }
             else if(result.data.message === "Wrong password"){
                 alert('Incorrect password! Please try again.');
