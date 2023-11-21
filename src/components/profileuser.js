@@ -63,14 +63,14 @@ const ProfilePage = () => {
       case 'deleteUser':
         return (
           <div>
-            <h1>Delete Doctor</h1>
+            <h1>Delete User</h1>
           </div>
         );
 
       case 'updateUser':
          return (
          <div>
-            <h1>Update Doctor</h1>
+            <h1>Update User</h1>
           </div>
         );
 
@@ -87,10 +87,10 @@ const ProfilePage = () => {
           Logout
         </Link>
         <Link to='/deleteuser' onClick={() => handleContentChange('deleteUser')} style={buttonStyle}>
-          Delete Doctor
+          Delete User
         </Link>
         <Link to='/updateuser' onClick={() => handleContentChange('updateUser')} style={buttonStyle}>
-          Edit Doctor
+          Edit User
         </Link>
       </div>
       {renderContent()}
