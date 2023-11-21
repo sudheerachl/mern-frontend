@@ -58,7 +58,7 @@ const handleSubmit = (e) => {
       <hr />
       <div className="home-container">
         <div className="quote-section">
-          <h2>Inspirational Quotes</h2>
+          <h2>Keep In Mind</h2>
           <p>{quotes[quoteIndex]}</p>
         </div>
         <div className="disease-form-section">
