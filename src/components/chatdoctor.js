@@ -55,7 +55,7 @@ return (
             </Link>
             <Link to="/deletediseased">
                <Button className="btn" variant="primary">
-                 Exit
+                 Delete
                </Button>
             </Link>
           </Card.Body>
