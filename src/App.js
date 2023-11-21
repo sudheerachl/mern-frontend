@@ -26,6 +26,7 @@ import Infodoctor from './components/infodoctor';
 import Updatedoctor from './components/updatedoctor';
 import Deletedoctor from './components/deletedoctor';
 import Deletediseased from './components/deletediseasedoctor';
+import Deletedisease from './components/deletediseaseuser';
 function App() {
   return (
     <>
@@ -55,6 +56,7 @@ function App() {
           <Route path='/updatedoctor' element={<Updatedoctor/>} />
           <Route path='/profiledoctor' element={<Profiledoctor />} />
           <Route path='/deletediseased' element={<Deletediseased/>} />
+          <Route path='/deletedisease' element={<Deletedisease/>} />
           <Route path='/quiz2' element={<Quiz2 />} />
           
         </Routes>
