@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navbar1 from './navbar1'; // Import Navbar1 if not already imported
+import Navbar2 from './navbar2'; // Import Navbar1 if not already imported
 import './Home.css'; 
 import axios from 'axios';
 export function Navedoctor() {
@@ -59,7 +59,7 @@ const handleSubmit = (e) => {
 
   return (
     <div id='main'>
-      <Navbar1 />
+      <Navbar2 />
       <hr />
       <div className="home-container">
         <div className="quote-section">
