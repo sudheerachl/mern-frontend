@@ -15,11 +15,11 @@ const Deletedoctor = () => {
         },
       });
 
-      if (response.data.message === 'User deleted successfully') {
+      if (response.data.message === 'Doctor deleted successfully') {
         alert('User deleted successfully!');
         setUsername('');
         setPassword('');
-      } else if (response.data.message === 'User not found') {
+      } else if (response.data.message === 'Doctor not found') {
         alert('User not found!');
       } else if (response.data.message === 'Incorrect password') {
         alert('Incorrect password or username. Please try again.');
