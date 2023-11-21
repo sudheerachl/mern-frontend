@@ -11,8 +11,8 @@ import Signupdoctor from './components/signupuser';
 import Signindoctor from './components/signindoctor';
 import Signupuser from './components/signupdoctor';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Nave } from './components/dashboarduser';
-import { Nave } from './components/dashboarddoctor';
+import { Naveuser } from './components/dashboarduser';
+import { Navedoctor } from './components/dashboarddoctor';
 import Testing from './components/chats';
 import HealthProblems1 from './components/healthproblems1';
 import Profileuser from './components/profileuser';
@@ -40,8 +40,8 @@ function App() {
           <Route path='/signindoctor' element={<Signindoctor />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/dashboarduser' element={<Nave />} />
-          <Route path='/dashboarddoctor' element={<Nave />} />
+          <Route path='/dashboarduser' element={<Naveuser />} />
+          <Route path='/dashboarddoctor' element={<Navedoctor />} />
           <Route path='/chats' element={<Testing />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
           <Route path='/infouser' element={<Infouser/>} />
