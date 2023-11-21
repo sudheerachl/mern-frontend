@@ -69,7 +69,7 @@ const Signindoctor = () => {
         </div>
        <form onSubmit={handleSubmit}>
                         <div className="container">
-                          <h3>Sign Up</h3>
+                          <h3>Sign In</h3>
                               <hr />
                             <label htmlFor="exampleInputUsername1" >
                                 <b>Username</b>
