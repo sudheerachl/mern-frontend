@@ -4,13 +4,13 @@ import Home from './components/home';
 import Blogs from './components/blogs';
 import HealthProblems from './components/healthproblems';
 import Healthbot from './components/healthbot';
-import Signin from './components/signin';
-import Signupuser from './components/signup';
+import Signin from './components/signinuser';
+import Signupuser from './components/signupuser';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Nave } from './components/dashboard';
+import { Nave } from './components/dashboarduser';
 import Testing from './components/chats';
 import HealthProblems1 from './components/healthproblems1';
-import Profile from './components/profile';
+import Profileuser from './components/profileuser';
 import Quiz2 from './components/quiz2';
 import Infouser from './components/infouser';
 import Updateuser from './components/updateuser';
@@ -25,15 +25,15 @@ function App() {
           <Route path='/blogs' element={<Blogs />} />
           <Route path='/healthproblems' element={<HealthProblems/>} />
           <Route path='/healthbot' element={<Healthbot />} />
-          <Route path='/signup' element={<Signupuser />} />
-          <Route path='/signin' element={<Signin />} />
-          <Route path='/dashboard' element={<Nave />} />
+          <Route path='/signupuser' element={<Signupuser />} />
+          <Route path='/signinuser' element={<Signin />} />
+          <Route path='/dashboarduser' element={<Nave />} />
           <Route path='/chats' element={<Testing />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
           <Route path='/infouser' element={<Infouser/>} />
           <Route path='/deleteuser' element={<Deleteuser/>} />
           <Route path='/updateuser' element={<Updateuser/>} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/profileuser' element={<Profile />} />
           <Route path='/quiz2' element={<Quiz2 />} />
           
         </Routes>
