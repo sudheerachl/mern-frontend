@@ -59,6 +59,6 @@ return (
     </div>
   </>
 );
-
+};
 
 export default Testingdoctor;
