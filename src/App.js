@@ -13,7 +13,8 @@ import Signupuser from './components/signupdoctor';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Naveuser } from './components/dashboarduser';
 import { Navedoctor } from './components/dashboarddoctor';
-import Testing from './components/chats';
+import Testinguser from './components/chatsuser';
+import Testingdoctor from './components/chatsdoctor';
 import HealthProblems1 from './components/healthproblems1';
 import Profileuser from './components/profileuser';
 import Profiledoctor from './components/profiledoctor';
@@ -42,7 +43,8 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/dashboarduser' element={<Naveuser />} />
           <Route path='/dashboarddoctor' element={<Navedoctor />} />
-          <Route path='/chats' element={<Testing />} />
+          <Route path='/chatsuser' element={<Testinguser />} />
+          <Route path='/chatsdoctor' element={<Testingdoctor />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
           <Route path='/infouser' element={<Infouser/>} />
           <Route path='/deleteuser' element={<Deleteuser/>} />
