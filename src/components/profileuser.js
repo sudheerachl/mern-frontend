@@ -3,6 +3,19 @@ import Navbar1 from './navbar1';
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 
+const buttonStyle = {
+  margin: '10px',
+  padding: '10px',
+  fontSize: '16px',
+  fontWeight: 'bold',
+  backgroundColor: '#4CAF50',
+  color: 'white',
+  borderRadius: '5px',
+  textDecoration: 'none',
+  display: 'inline-block',
+  textAlign: 'center',
+};
+
 const ProfilePage = () => {
   const navigate = useNavigate();
   const [showContent, setShowContent] = useState('loginSuccess'); // State to manage content visibility
