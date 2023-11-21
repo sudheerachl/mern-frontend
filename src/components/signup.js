@@ -8,7 +8,7 @@ const Signup = () => {
     <Navbar />
     <div className="container">
       
-      <div className="card" style={Card-Style}>
+       <div className="card card-style">
         <h1>Empower others as a compassionate doctor</h1>
         <p>
           Are you a licensed therapist or a counselor seeking to make a
@@ -21,7 +21,7 @@ const Signup = () => {
           Join now
         </a>
       </div>
-      <div className="card" style={Card-Style}>
+      <div className="card card-style">
         <h1>Share your experiences and find connection.</h1>
         <p>
           Join a supportive community of individuals who understand what you're
@@ -30,7 +30,7 @@ const Signup = () => {
           knowing that you're not alone. Together, you can uplift each other and
           find strength in shared understanding.
         </p>
-        <a href="/signupuser" className="button" style={buttonStyle}>
+        <a href="/signupuser" className="buttonStyle">
           Join now
         </a>
       </div>
