@@ -13,7 +13,7 @@ import Signupuser from './components/signupdoctor';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Naveuser } from './components/dashboarduser';
 import { Navedoctor } from './components/dashboarddoctor';
-import Testinguser from './components/chatuser';
+import Testinguser from './components/chatsuser';
 import Testingdoctor from './components/chatdoctor';
 import HealthProblems1 from './components/healthproblems1';
 import Profileuser from './components/profileuser';
