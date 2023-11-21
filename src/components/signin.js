@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './navbar';
 import './Cards.css';
 
-const Cards = () => {
+const Signin = () => {
   return (
     <div className="cards-container">
       <Navbar />
@@ -20,4 +20,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Signin;
