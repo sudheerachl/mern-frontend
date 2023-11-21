@@ -23,7 +23,7 @@ const Deleteuser = () => {
       } else if (response.data.message === 'Incorrect password') {
         alert('Incorrect password. Please try again.');
       } 
-       else if (response.data.message === 'Disease not found for this doctor') {
+       else if (response.data.message === 'Disease not found for this user') {
         alert('Chatroom not found!');
       }else {
         alert('An error occurred while deleting the user. Please try again.');
