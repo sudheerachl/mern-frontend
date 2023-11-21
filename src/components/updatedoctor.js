@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-const Updateuser = () => {
+const Updatedoctor = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -15,7 +15,7 @@ const Updateuser = () => {
     event.preventDefault();
 
     try {
-      const result = await axios.post('https://backend-user-bms6.onrender.com/update-docttor', {
+      const result = await axios.post('https://backend-user-bms6.onrender.com/update-doctor', {
         name,
         username,
         phoneNumber,
