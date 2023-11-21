@@ -76,16 +76,6 @@ h1 a:hover{
 .card-img:hover img{
     transform: scale(1.2);
 }
-.buttonStyle{
-    display: 'inline-block';
-    padding: '10px 20px';
-    border: 'none';
-    cursor: 'pointer';
-    backgroundColor: '#007bff';
-    color: '#fff';
-    borderRadius: '5px';
-    textDecoration: 'none';
-  }
 
 /* Health problems */
 .problem{
@@ -159,3 +149,15 @@ button{
 button:hover{
   opacity: 1;
 }
+//signup
+buttonStyle{
+    display: 'inline-block';
+    padding: '10px 20px';
+    border: 'none';
+    cursor: 'pointer';
+    backgroundColor: '#007bff';
+    color: '#fff';
+    borderRadius: '5px';
+    textDecoration: 'none';
+  }
+
