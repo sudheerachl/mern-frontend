@@ -60,5 +60,5 @@ return (
   </>
 );
 
-
+};
 export default Testinguser;
