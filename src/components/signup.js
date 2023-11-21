@@ -23,7 +23,7 @@ const Signup = () => {
           with individuals in need of your expertise and support. As a doctor,
           you can provide a safe and confidential space for individuals to share
           their experiences, develop coping mechanisms, and find renewed hope.</p>
-                    <a href="/signupdoctor" className="btn btn-primary">Join now</>
+                    <a href="/signupdoctor" className="btn btn-primary">Join now</a>
                   </div>
                 </div>
               </div>
@@ -37,7 +37,7 @@ const Signup = () => {
           express your feelings, share your experiences, and find comfort in
           knowing that you're not alone. Together, you can uplift each other and
           find strength in shared understanding.</p>
-                   <a href="/signupuser"  className="btn btn-primary">Join Now</>
+                   <a href="/signupuser"  className="btn btn-primary">Join Now</a>
                   </div>
                 </div>
               </div>
