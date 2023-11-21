@@ -14,16 +14,16 @@ function Navbar1() {
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style={{ '--bs-scroll-height': '100px' }}>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/dashboard">Home</Link>
+                <Link className="nav-link active" aria-current="page" to="/dashboarduser">Home</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/chats">Chats</Link>
+                <Link className="nav-link" to="/chatsuser">Chats</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/healthproblems1">Health problems</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/profile">Profile</Link>
+                <Link className="nav-link" to="/profileuser">Profile</Link>
               </li>
               
             </ul>
