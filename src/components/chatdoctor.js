@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Navbar1 from './navbar1';
 import '../test.css';
 
-const Testinguser = () => {
+const Testingdoctor = () => {
   const username = localStorage.getItem('username');
   const [diseases, setDiseases] = useState([]);
 
