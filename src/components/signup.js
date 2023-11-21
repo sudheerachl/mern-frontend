@@ -10,7 +10,7 @@ const Signup = () => {
        
         <div className="main">
           <div className="heading">
-            <h2>Blogs</h2>
+            <h2>Signup</h2>
           </div>
           <div className="container">
             <div className="row">
