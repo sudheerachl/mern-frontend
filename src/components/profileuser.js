@@ -17,19 +17,29 @@ const buttonStyle = {
   textAlign: 'center',
 };
 
+const profileStyle = {
+  marginTop: '50px',
+  padding: '20px',
+  border: '2px solid #4CAF50',
+  borderRadius: '10px',
+  maxWidth: '600px',
+  margin: 'auto',
+};
+
 const ProfilePage = () => {
   const navigate = useNavigate();
-  const [showContent, setShowContent] = useState('loginSuccess'); // State to manage content visibility
-  const [userDetails, setUserDetails] = useState(null); // State to store user details
+  const [showContent, setShowContent] = useState('loginSuccess');
+  const [userDetails, setUserDetails] = useState(null);
   const username = localStorage.getItem('username');
+  
   const handleContentChange = (content) => {
     setShowContent(content);
   };
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(`https://backend-user-bms6.onrender.com/info-user/${username}`);
-        console.log(response.data);
         setUserDetails(response.data);
       } catch (error) {
         console.error(error);
@@ -41,7 +51,6 @@ const ProfilePage = () => {
     }
   }, [username]);
 
-  // Check if user details are loaded before rendering content
   if (!userDetails) {
     return <div>Loading user details...</div>;
   }
@@ -50,14 +59,14 @@ const ProfilePage = () => {
     switch (showContent) {
       case 'loginSuccess':
         return (
-          <div>
+          <div style={profileStyle}>
             <h2>User Details</h2>
-            <p>Username: {userDetails.username}</p>
-            <p>Email: {userDetails.email}</p>
-            <p>Name: {userDetails.name}</p>
-            <p>Gender: {userDetails.gender}</p>
-            <p>Phonenumber: {userDetails.phoneNumber}</p>
-            <p>Chatrooms: {userDetails.diseases}</p>
+            <p><strong>Username:</strong> {userDetails.username}</p>
+            <p><strong>Email:</strong> {userDetails.email}</p>
+            <p><strong>Name:</strong> {userDetails.name}</p>
+            <p><strong>Gender:</strong> {userDetails.gender}</p>
+            <p><strong>Phonenumber:</strong> {userDetails.phoneNumber}</p>
+            <p><strong>Chatrooms:</strong> {userDetails.diseases}</p>
           </div>
         );
 
@@ -69,8 +78,8 @@ const ProfilePage = () => {
         );
 
       case 'updateUser':
-         return (
-         <div>
+        return (
+          <div>
             <h1>Update User</h1>
           </div>
         );
