@@ -57,6 +57,7 @@ const ProfilePage = () => {
             <p>Name: {userDetails.name}</p>
             <p>Gender: {userDetails.gender}</p>
             <p>Phonenumber: {userDetails.phoneNumber}</p>
+            <p>Chatrooms: {userDetails.diseases}</p>
           </div>
         );
 
