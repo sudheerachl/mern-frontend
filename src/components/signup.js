@@ -2,7 +2,16 @@ import React from 'react';
 import Navbar from './navbar';
 
 const Signup = () => {
-
+  const buttonStyle = {
+    display: 'inline-block',
+    padding: '10px 20px',
+    border: 'none',
+    cursor: 'pointer',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    borderRadius: '5px',
+    textDecoration: 'none',
+  };
   return (
     <div>
     <Navbar />
@@ -30,7 +39,7 @@ const Signup = () => {
           knowing that you're not alone. Together, you can uplift each other and
           find strength in shared understanding.
         </p>
-        <a href="/signupuser" className="buttonStyle">
+       <a href="/signupuser" className="button" style={buttonStyle}>
           Join now
         </a>
       </div>
