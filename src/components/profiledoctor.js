@@ -32,19 +32,19 @@ const Profiledoctor = () => {
             <h1>Login Success Page</h1>
           </div>
         );
-      case 'deleteUser':
+      case 'deleteDoctor':
         return (
           <div>
             <h1>Delete Doctor</h1>
           </div>
         );
-      case 'updateUser':
+      case 'updateDoctor':
         return (
           <div>
             <h1>Edit Doctor</h1>
           </div>
         );
-      case 'infoUser':
+      case 'infoDoctor':
         return (
           <div>
             <h1>View Doctor Info</h1>
@@ -62,13 +62,13 @@ const Profiledoctor = () => {
         <Link to='/' onClick={() => handleContentChange('loginSuccess')} style={buttonStyle}>
           Logout
         </Link>
-        <Link to='/deleteuser' onClick={() => handleContentChange('deleteUser')} style={buttonStyle}>
+        <Link to='/deletedoctor' onClick={() => handleContentChange('deleteDoctor')} style={buttonStyle}>
           Delete Doctor
         </Link>
-        <Link to='/updateuser' onClick={() => handleContentChange('updateUser')} style={buttonStyle}>
+        <Link to='/updatedoctor' onClick={() => handleContentChange('updateDoctor')} style={buttonStyle}>
           Edit Doctor
         </Link>
-        <Link to='/infouser' onClick={() => handleContentChange('infoUser')} style={buttonStyle}>
+        <Link to='/infodoctor' onClick={() => handleContentChange('infoDoctor')} style={buttonStyle}>
           View Doctor Info
         </Link>
       </div>
