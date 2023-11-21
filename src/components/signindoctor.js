@@ -59,8 +59,11 @@ const Signindoctor = () => {
             
             <li>
               <Link className="active" to="/signin">
-                Sign Up
+                Sign In
               </Link>
+              <li>
+              <Link to="/signup">Signup</Link>
+            </li>
             </li>
           </ul>
         </div>
