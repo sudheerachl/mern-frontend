@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar2 from './navbar2';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const buttonStyle = {
@@ -16,40 +17,73 @@ const buttonStyle = {
   textAlign: 'center',
 };
 
+const profileStyle = {
+  marginTop: '50px',
+  padding: '20px',
+  border: '2px solid #4CAF50',
+  borderRadius: '10px',
+  maxWidth: '600px',
+  margin: 'auto',
+};
+
 const Profiledoctor = () => {
   const navigate = useNavigate();
-  const [showContent, setShowContent] = useState('loginSuccess'); // State to manage content visibility
-
+  const [showContent, setShowContent] = useState('loginSuccess');
+  const [userDetails, setUserDetails] = useState(null);
+  const username = localStorage.getItem('username');
+  
   const handleContentChange = (content) => {
     setShowContent(content);
   };
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`https://backend-user-bms6.onrender.com/info-doctor/${username}`);
+        setUserDetails(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    if (username) {
+      fetchData();
+    }
+  }, [username]);
+
+  if (!userDetails) {
+    return <div>Loading user details...</div>;
+  }
 
   const renderContent = () => {
     switch (showContent) {
       case 'loginSuccess':
         return (
-          <div>
-            <h1>Login Success Page</h1>
+          <div style={profileStyle}>
+            <h2>User Details</h2>
+            <p><strong>Username:</strong> {userDetails.username}</p>
+            <p><strong>Email:</strong> {userDetails.email}</p>
+            <p><strong>Name:</strong> {userDetails.name}</p>
+            <p><strong>Gender:</strong> {userDetails.gender}</p>
+            <p><strong>Phonenumber:</strong> {userDetails.phoneNumber}</p>
+            <p><strong>Chatrooms:</strong> {userDetails.diseases.join(', ')}</p>
           </div>
         );
-      case 'deleteDoctor':
+
+      case 'deleteUser':
         return (
           <div>
             <h1>Delete Doctor</h1>
           </div>
         );
-      case 'updateDoctor':
+
+      case 'updateUser':
         return (
           <div>
-            <h1>Edit Doctor</h1>
+            <h1>Update Doctor</h1>
           </div>
         );
-      case 'infoDoctor':
-        return (
-          <div>
-            <h1>View Doctor Info</h1>
-          </div>
-        );
+
       default:
         return null;
     }
@@ -63,13 +97,10 @@ const Profiledoctor = () => {
           Logout
         </Link>
         <Link to='/deletedoctor' onClick={() => handleContentChange('deleteDoctor')} style={buttonStyle}>
-          Delete Doctor
+          Delete User
         </Link>
         <Link to='/updatedoctor' onClick={() => handleContentChange('updateDoctor')} style={buttonStyle}>
-          Edit Doctor
-        </Link>
-        <Link to='/infodoctor' onClick={() => handleContentChange('infoDoctor')} style={buttonStyle}>
-          View Doctor Info
+          Edit User
         </Link>
       </div>
       {renderContent()}
