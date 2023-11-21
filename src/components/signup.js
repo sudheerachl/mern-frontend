@@ -32,8 +32,9 @@ const Signin = () => {
   };
 
   return (
+    <Navbar />
     <div className="cards-container">
-      <Navbar />
+      
       <div className="card" style={firstCardStyle}>
         <h1>Empower others as a compassionate doctor</h1>
         <p>
