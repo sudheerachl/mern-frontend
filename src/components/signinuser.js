@@ -59,14 +59,17 @@ const Signinuser = () => {
             
             <li>
               <Link className="active" to="/signin">
-                Sign Up
+                Sign In
               </Link>
+            </li>
+             <li>
+              <Link to="/signup">Signup</Link>
             </li>
           </ul>
         </div>
        <form onSubmit={handleSubmit}>
                         <div className="container">
-                         <h3>Sign Up</h3>
+                         <h3>Sign In</h3>
                              <hr />
                             <label htmlFor="exampleInputUsername1" >
                                 <b>Username</b>
