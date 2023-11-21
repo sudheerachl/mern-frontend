@@ -1,41 +1,13 @@
 import React from 'react';
 import Navbar from './navbar';
 
-const Signin = () => {
-  const firstCardStyle = {
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: '#f2f2f2',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    borderRadius: '10px',
-    margin: '20px',
-  };
-
-  const secondCardStyle = {
-    textAlign: 'center',
-    padding: '20px',
-    backgroundColor: '#f2f2f2',
-    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    borderRadius: '10px',
-    margin: '20px',
-  };
-
-  const buttonStyle = {
-    display: 'inline-block',
-    padding: '10px 20px',
-    border: 'none',
-    cursor: 'pointer',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    borderRadius: '5px',
-    textDecoration: 'none',
-  };
+const Signup = () => {
 
   return (
     <Navbar />
-    <div className="cards-container">
+    <div className="container">
       
-      <div className="card" style={firstCardStyle}>
+      <div className="card" style={Card-Style}>
         <h1>Empower others as a compassionate doctor</h1>
         <p>
           Are you a licensed therapist or a counselor seeking to make a
@@ -48,7 +20,7 @@ const Signin = () => {
           Join now
         </a>
       </div>
-      <div className="card" style={secondCardStyle}>
+      <div className="card" style={Card-Style}>
         <h1>Share your experiences and find connection.</h1>
         <p>
           Join a supportive community of individuals who understand what you're
@@ -65,4 +37,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signup;
