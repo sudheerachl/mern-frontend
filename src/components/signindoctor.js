@@ -79,6 +79,7 @@ const Signindoctor = () => {
                                 placeholder="Enter Username"
                                 className="form-control" 
                                 id="exampleInputUsername1" 
+                                name="username"
                                 onChange={(event) => setUsername(event.target.value)}
                                 required
                             />
@@ -90,6 +91,7 @@ const Signindoctor = () => {
                                 placeholder="Enter Password"
                                 className="form-control" 
                                 id="exampleInputPassword1" 
+                                name="pwd"
                                 onChange={(event) => setPassword(event.target.value)}
                                 required
                             />
