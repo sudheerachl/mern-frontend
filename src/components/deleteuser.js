@@ -33,29 +33,34 @@ const Deleteuser = () => {
 
   return (
    <div>
-      <h2>Delete User</h2>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          placeholder="Enter username"
-          value={username}
-          onChange={(event) => setUsername(event.target.value)}
-          required
-        />
-        <br />
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          placeholder="Enter password"
-          value={password}
-          onChange={(event) => setPassword(event.target.value)}
-          required
-        />
-        <br />
-        <button type="submit">Delete Your Account</button>
+        <div className="container">
+                         <h3>Sign In</h3>
+                             <hr />
+                            <label htmlFor="exampleInputUsername1" >
+                                <b>Username</b>
+                            </label>
+                            <input 
+                                type="text" 
+                                placeholder="Enter Username"
+                                className="form-control" 
+                                id="exampleInputUsername1" 
+                                onChange={(event) => setUsername(event.target.value)}
+                                required
+                            /> 
+                            <label htmlFor="exampleInputPassword1" >
+                                <b>Password</b>
+                            </label>
+                            <input 
+                                type="password" 
+                                placeholder="Enter Password"
+                                className="form-control" 
+                                id="exampleInputPassword1" 
+                                onChange={(event) => setPassword(event.target.value)}
+                                required
+                            />
+                        </div>
+                        <button type="submit" >Delete Your Account</button>
       </form>
     </div>
   );
