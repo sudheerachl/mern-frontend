@@ -10,7 +10,7 @@ const Signin = () => {
        
         <div className="main">
           <div className="heading">
-            <h2>Signup</h2>
+            <h2>Signin</h2>
           </div>
           <div className="container">
             <div className="row">
@@ -19,7 +19,7 @@ const Signin = () => {
                    <div className="card-body">
                     <h5 className="card-title">Empower others as a compassionate doctor</h5>
                     <p className="card-text"> Are you a licensed therapist or a counselor seeking to make a positive impact on the lives of others? </p>
-                    <a href="/signupdoctor" className="btn btn-primary">Resume your journey</a>
+                    <a href="/signindoctor" className="btn btn-primary">Resume your journey</a>
                   </div>
                 </div>
               </div>
@@ -29,7 +29,7 @@ const Signin = () => {
                   <div className="card-body">
                     <h5 className="card-title">Share your experiences and find connection.</h5>
                     <p className="card-text">  Join a supportive community of individuals who understand what you're going through.</p>
-                   <a href="/signupuser"  className="btn btn-primary">Resume your journey</a>
+                   <a href="/signinuser"  className="btn btn-primary">Resume your journey</a>
                   </div>
                 </div>
               </div>
