@@ -17,14 +17,14 @@ const Deletedoctor = () => {
       });
 
       if (response.data.message === 'Disease deleted successfully') {
-        alert('User deleted successfully!');
+        alert('Chatroom exited successfully!');
          } else if (response.data.message === 'Doctor not found') {
         alert('User not found!');
       } else if (response.data.message === 'Incorrect password') {
-        alert('Incorrect password or username. Please try again.');
+        alert('Incorrect password. Please try again.');
       } 
        else if (response.data.message === 'Disease not found for this doctor') {
-        alert('User not found!');
+        alert('Chatroom not found!');
       }else {
         alert('An error occurred while deleting the user. Please try again.');
       }
