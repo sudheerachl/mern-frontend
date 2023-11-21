@@ -66,8 +66,10 @@ const Signindoctor = () => {
         </div>
        <form onSubmit={handleSubmit}>
                         <div className="container">
+                          <h3>Sign Up</h3>
+                              <hr />
                             <label htmlFor="exampleInputUsername1" >
-                                <strong>Username</strong>
+                                <b>Username</b>
                             </label>
                             <input 
                                 type="text" 
@@ -76,11 +78,9 @@ const Signindoctor = () => {
                                 id="exampleInputUsername1" 
                                 onChange={(event) => setUsername(event.target.value)}
                                 required
-                            /> 
-                        </div>
-                        <div className="container">
+                            />
                             <label htmlFor="exampleInputPassword1" >
-                                <strong>Password</strong>
+                                <b>Password</b>
                             </label>
                             <input 
                                 type="password" 
