@@ -24,7 +24,7 @@ const Updateuser = () => {
         password,
       });
 
-      if (result.data.message === 'Doctor information updated successfully') {
+      if (result.data.message === 'User information updated successfully') {
         alert('Update successful!');
         navigate('/dashboarduser');
       } else {
