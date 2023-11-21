@@ -21,9 +21,9 @@ export function Navedoctor() {
 const username = localStorage.getItem('username');
 const handleSubmit = (e) => {
   e.preventDefault();
-
+//Maximum number of diseases reached
   // Send both username and diseaseName to the backend
-  axios.post('https://backend-user-bms6.onrender.com/addDisease', { username, disease: diseaseName })
+  axios.post('https://backend-user-bms6.onrender.com/addDiseased', { username, disease: diseaseName })
     .then(response => {
       console.log(response.data);
       if (response.data.message === "Disease added successfully") {
@@ -31,7 +31,11 @@ const handleSubmit = (e) => {
         alert(`Disease added successfully`);
       } else if (response.data.message === 'Disease already exists for this user') {
         alert('Disease already exists for this user.');
-      } else if (response.data.message === 'User not found') {
+      } 
+        else if (response.data.message === 'Maximum number of diseases reached') {
+        alert('Maximum number of specializations reached. You can only be in 3 groups as a doctor.');
+      } 
+      else if (response.data.message === 'User not found') {
         alert('Username not found');
       } else {
         console.error('Error logging in');
