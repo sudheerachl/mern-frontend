@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar1 from './navbar1'; // Import Navbar1 if not already imported
 import './Home.css'; 
 import axios from 'axios';
-export function Nave() {
+export function Naveuser() {
   const [quoteIndex, setQuoteIndex] = useState(0);
   const [diseaseName, setDiseaseName] = useState('');
 
@@ -77,6 +77,7 @@ const handleSubmit = (e) => {
           </form>
         </div>
         <div className="quiz-section">
+          
           <h2>Confused about your mental health?</h2>
           <p>Take this quiz to gain insights and find support.</p>
           <a href="/quiz2" className="quiz-button">
