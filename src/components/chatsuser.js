@@ -39,8 +39,7 @@ return (
         Mental health challenges can be isolating and overwhelming, but you don't have to go through it alone. Join our community groups to connect with others who understand what you're going through, share your experiences, and find support.Some groups might not have certified doctors.we are trying our best to reach out to doctors so that we can provide every group with a doctor. We value your mental health. And will continue to workhard for that.
       </p>
     </div>
-
-    <div className="card-container">
+    <div className="classcontain">
       {diseases.map((disease) => (
         <Card className="card" key={disease}>
           <Card.Body>
@@ -57,6 +56,7 @@ return (
         </Card>
       ))}
     </div>
+      
   </>
 );
 
