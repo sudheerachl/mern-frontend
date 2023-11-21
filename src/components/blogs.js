@@ -12,7 +12,8 @@ function Blogs() {
             <li><Link className="active" to="/blogs">Blogs</Link></li>
             <li><Link to="/healthproblems">Health Problems</Link></li>
             <li><Link to="/quiz2">Quiz</Link></li>
-            <li><Link to="/signin">Sign Up</Link></li>
+            <li><Link to="/signup">Sign Up</Link></li>
+            <li><Link to="/signin">Sign In</Link></li>
           </ul>
         </div>
         <div className="main">
