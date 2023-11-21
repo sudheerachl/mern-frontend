@@ -62,7 +62,7 @@ const Deleteuser = () => {
                                 required
                             />
                             <label htmlFor="exampleInputDisease1" >
-                                <b>Password</b>
+                                <b>Chatroom</b>
                             </label>
                             <input 
                                 type="text" 
