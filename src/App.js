@@ -25,7 +25,7 @@ import Deleteuser from './components/deleteuser';
 import Infodoctor from './components/infodoctor';
 import Updatedoctor from './components/updatedoctor';
 import Deletedoctor from './components/deletedoctor';
-
+import Deletediseased from './components/deletediseasedoctor';
 function App() {
   return (
     <>
@@ -54,6 +54,7 @@ function App() {
           <Route path='/deletedoctor' element={<Deletedoctor/>} />
           <Route path='/updatedoctor' element={<Updatedoctor/>} />
           <Route path='/profiledoctor' element={<Profiledoctor />} />
+          <Route path='/deletediseased' element={<Deletediseased/>} />
           <Route path='/quiz2' element={<Quiz2 />} />
           
         </Routes>
