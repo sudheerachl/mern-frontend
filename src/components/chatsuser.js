@@ -52,6 +52,11 @@ return (
                 Join
               </Button>
             </Link>
+            <Link to='/deletedisease'>
+              <Button className="btn" variant="primary">
+                Exit
+              </Button>
+            </Link>
           </Card.Body>
         </Card>
       ))}
