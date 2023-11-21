@@ -27,14 +27,9 @@ const Navbar = () => {
               <li className="nav-item">
                 <Link className="nav-link" to="/quiz2" aria-label="Navigate to Quiz page">Quiz</Link>
               </li>
-               <li className="nav-item">
-                <Link className="btn btn-outline-primary" to="/signin" role="button" aria-label="Sign in">Sign In</Link>
-               </li>
-               <li className="nav-item">
-                <Link className="btn btn-outline-primary" to="/signup" role="button" aria-label="Sign up">Sign Up</Link>
-               </li>
-            </ul>
-           
+              </ul>
+               <Link className="btn btn-outline-primary" to="/signin" role="button" aria-label="Sign in">Sign In</Link>
+            <Link className="btn btn-outline-primary" to="/signup" role="button" aria-label="Sign up">Sign Up</Link>
           </div>
         </div>
       </nav>
