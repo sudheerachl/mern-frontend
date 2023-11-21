@@ -4,6 +4,7 @@ import Navbar from './navbar';
 const Signup = () => {
 
   return (
+    <div>
     <Navbar />
     <div className="container">
       
@@ -34,6 +35,7 @@ const Signup = () => {
         </a>
       </div>
     </div>
+   </div>
   );
 };
 
