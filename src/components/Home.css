@@ -22,8 +22,14 @@
   font-size: 24px; /* Larger font size for the quote text */
   font-weight: bold; /* Added bold styling for emphasis */
 }
-.quiz-section,
+.quiz-section{
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
 .disease-form-section {
+  margin-bottom: 20px;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
