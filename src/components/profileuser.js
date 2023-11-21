@@ -66,7 +66,7 @@ const ProfilePage = () => {
             <p><strong>Name:</strong> {userDetails.name}</p>
             <p><strong>Gender:</strong> {userDetails.gender}</p>
             <p><strong>Phonenumber:</strong> {userDetails.phoneNumber}</p>
-            <p><strong>Chatrooms:</strong> {userDetails.diseases}</p>
+            <p><strong>Chatrooms:</strong> {userDetails.diseases.join(', ')}</p>
           </div>
         );
 
