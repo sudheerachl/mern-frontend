@@ -16,15 +16,16 @@ const Deletedoctor = () => {
         },
       });
 
-      if (response.data.message === 'Doctor deleted successfully') {
+      if (response.data.message === 'Disease deleted successfully') {
         alert('User deleted successfully!');
-        setUsername('');
-        setPassword('');
-      } else if (response.data.message === 'Doctor not found') {
+         } else if (response.data.message === 'Doctor not found') {
         alert('User not found!');
       } else if (response.data.message === 'Incorrect password') {
         alert('Incorrect password or username. Please try again.');
-      } else {
+      } 
+       else if (response.data.message === 'Disease not found for this doctor') {
+        alert('User not found!');
+      }else {
         alert('An error occurred while deleting the user. Please try again.');
       }
     } catch (error) {
