@@ -71,12 +71,13 @@ function Signupuser() {
           </li>
         </ul>
       </div>
-      <div>
-        <h2>Register</h2>
+     <div className="container">
+        <h3>Sign Up</h3>
+            <hr />
        <form onSubmit={handleSubmit}>
            <div className="container">
               <label htmlFor="exampleInputEmail1">
-                <strong>Name</strong>
+                <b>Name</b>
               </label>
               <input
                 type="text"
@@ -86,10 +87,9 @@ function Signupuser() {
                 onChange={(event) => setName(event.target.value)}
                 required
               /> 
-            </div>
-            <div className="container">
-              <label htmlFor="exampleInputEmail1">
-                <strong>Email Id</strong>
+           
+             <label htmlFor="exampleInputEmail1">
+                <b>Email Id</b>
               </label>
               <input
                 type="email"
@@ -99,10 +99,8 @@ function Signupuser() {
                 onChange={(event) => setEmail(event.target.value)}
                 required
               /> 
-            </div>
-            <div className="container">
               <label htmlFor="exampleInputUsername">
-                <strong>Username</strong>
+                <b>Username</b>
               </label>
               <input
                 type="text"
@@ -112,10 +110,8 @@ function Signupuser() {
                 onChange={(event) => setUsername(event.target.value)}
                 required
               /> 
-            </div>
-            <div className="container">
               <label htmlFor="exampleInputPassword1">
-                <strong>Password</strong>
+                <b>Password</b>
               </label>
               <input
                 type="password"
@@ -125,10 +121,8 @@ function Signupuser() {
                 onChange={(event) => setPassword(event.target.value)}
                 required
               />
-            </div>
-            <div className="container">
               <label htmlFor="exampleInputGender">
-                <strong>Gender</strong>
+                <b>Gender</b>
               </label>
               <div className="form-check">
                 <input
@@ -172,11 +166,9 @@ function Signupuser() {
     Other
   </label>
 </div>
-</div>
 
-<div className="container">
   <label htmlFor="exampleInputPhoneNumber">
-    <strong>PhoneNumber</strong>
+    <b>PhoneNumber</b>
   </label>
   <input
     type="PhoneNumber"
@@ -191,7 +183,7 @@ function Signupuser() {
 </form>
  
       </div>
-    </div>
+  
   );
 }
 
