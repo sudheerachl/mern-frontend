@@ -3,7 +3,7 @@ import axios from 'axios';
 const Deletedoctor = () => {
   const [username, setUsername] = React.useState('');
   const [password, setPassword] = React.useState('');
-
+   const [disease, setDisease] = React.useState('');
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -12,6 +12,7 @@ const Deletedoctor = () => {
         data: {
           username,
           password,
+          disease,
         },
       });
 
@@ -59,8 +60,20 @@ const Deletedoctor = () => {
                                 onChange={(event) => setPassword(event.target.value)}
                                 required
                             />
-                        </div>
+                            <label htmlFor="exampleInputDisease1" >
+                                <b>Password</b>
+                            </label>
+                            <input 
+                                type="text" 
+                                placeholder="Enter chatroom name"
+                                className="form-control" 
+                                id="exampleInputDisease1" 
+                                onChange={(event) => setDisease(event.target.value)}
+                                required
+                            />
+                        
                         <button type="submit" >Leave this group</button>
+                                  </div>
       </form>
     </div>
   );
