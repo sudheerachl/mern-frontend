@@ -22,7 +22,9 @@ const ProfilePage = () => {
   const [showContent, setShowContent] = useState('loginSuccess'); // State to manage content visibility
   const [userDetails, setUserDetails] = useState(null); // State to store user details
   const username = localStorage.getItem('username');
-
+  const handleContentChange = (content) => {
+    setShowContent(content);
+  };
   useEffect(() => {
     const fetchData = async () => {
       try {
