@@ -4,7 +4,7 @@ import Home from './components/home';
 import Blogs from './components/blogs';
 import HealthProblems from './components/healthproblems';
 import Healthbot from './components/healthbot';
-import Signin from './components/signinuser';
+import Signinuser from './components/signinuser';
 import Signupuser from './components/signupuser';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Nave } from './components/dashboarduser';
@@ -26,14 +26,14 @@ function App() {
           <Route path='/healthproblems' element={<HealthProblems/>} />
           <Route path='/healthbot' element={<Healthbot />} />
           <Route path='/signupuser' element={<Signupuser />} />
-          <Route path='/signinuser' element={<Signin />} />
+          <Route path='/signinuser' element={<Signinuser />} />
           <Route path='/dashboarduser' element={<Nave />} />
           <Route path='/chats' element={<Testing />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
           <Route path='/infouser' element={<Infouser/>} />
           <Route path='/deleteuser' element={<Deleteuser/>} />
           <Route path='/updateuser' element={<Updateuser/>} />
-          <Route path='/profileuser' element={<Profile />} />
+          <Route path='/profileuser' element={<Profileuser />} />
           <Route path='/quiz2' element={<Quiz2 />} />
           
         </Routes>
