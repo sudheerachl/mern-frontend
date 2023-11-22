@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navbar2 from './navbar1';
+import Navbar2 from './navbar2';
 
 function HealthProblems2() {
   return (
