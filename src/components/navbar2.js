@@ -20,7 +20,7 @@ function Navbar2() {
                 <Link className="nav-link" to="/chatsdoctor">Chats</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/healthproblems1">Health problems</Link>
+                <Link className="nav-link" to="/healthproblems2">Health problems</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/profiledoctor">Profile</Link>
