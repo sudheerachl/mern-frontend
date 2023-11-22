@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar2() {
+  const handleLogout = () => {
+  localStorage.removeItem("username");
+  history.push("/");
+};
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{ borderBottom: 'white solid 0.6vw' }}>
@@ -27,7 +31,7 @@ function Navbar2() {
               </li>
               
             </ul>
-            <Link className="btn btn-danger" to="/" role="button">Sign Out</Link>
+            <button className="btn btn-danger" onClick={handleLogout}>Sign Out</button>
           </div>
         </div>
       </nav>
