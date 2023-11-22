@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Navbar1 from './navbar1';
+import Navbar2 from './navbar2';
 import '../test.css';
 
 const Testingdoctor = () => {
@@ -31,7 +31,7 @@ const Testingdoctor = () => {
 
 return (
   <>
-    <Navbar1 />
+    <Navbar2 />
 
     <div className="matter-container">
       <h2 className="matter-heading">Connect with others facing similar challenges</h2>
