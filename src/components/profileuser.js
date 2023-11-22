@@ -50,6 +50,15 @@ const ProfilePage = () => {
       fetchData();
     }
   }, [username]);
+   if (!username) {
+    return (
+      <div id='main'>
+        <p>Please sign in again.</p>
+        <a href="/signin" className="quiz-button">
+            Proceed to signin
+          </a>
+      </div>
+    );
 
   if (!userDetails) {
     return <div>Loading user details...</div>;
