@@ -58,7 +58,7 @@ const ProfilePage = () => {
             Proceed to signin
           </a>
       </div>
-    );
+    );}
 
   if (!userDetails) {
     return <div>Loading user details...</div>;
