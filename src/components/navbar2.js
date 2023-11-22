@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar2() {
+   const history = useHistory();
   const handleLogout = () => {
   localStorage.removeItem("username");
   history.push("/");
