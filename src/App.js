@@ -16,6 +16,7 @@ import { Navedoctor } from './components/dashboarddoctor';
 import Testinguser from './components/chatsuser';
 import Testingdoctor from './components/chatdoctor';
 import HealthProblems1 from './components/healthproblems1';
+import HealthProblems2 from './components/healthproblems2';
 import Profileuser from './components/profileuser';
 import Profiledoctor from './components/profiledoctor';
 import Quiz2 from './components/quiz2';
@@ -47,6 +48,7 @@ function App() {
           <Route path='/chatsuser' element={<Testinguser />} />
           <Route path='/chatsdoctor' element={<Testingdoctor />} />
           <Route path='/healthproblems1' element={<HealthProblems1 />} />
+          <Route path='/healthproblems2' element={<HealthProblems2 />} />
           <Route path='/infouser' element={<Infouser/>} />
           <Route path='/deleteuser' element={<Deleteuser/>} />
           <Route path='/updateuser' element={<Updateuser/>} />
