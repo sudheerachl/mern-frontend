@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom';
 import Navbar2 from './navbar2';
 
 function HealthProblems2() {
+    const username = localStorage.getItem('username');
+    if (!username) {
+    return (
+      <div id='main'>
+        <p>Please sign in again.</p>
+        <a href="/signin" className="quiz-button">
+            Proceed to signin
+          </a>
+      </div>
+    );
+  }
   return (
     <div>
         
