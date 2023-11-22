@@ -51,7 +51,16 @@ const handleSubmit = (e) => {
 
     return () => clearInterval(interval);
   }, []);
-
+   if (!username) {
+    return (
+      <div id='main'>
+        <p>Please sign in again.</p>
+        <a href="/signin" className="quiz-button">
+            Proceed to signin
+          </a>
+      </div>
+    );
+  }
   return (
     <div id='main'>
       <Navbar1 />
