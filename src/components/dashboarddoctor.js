@@ -5,7 +5,7 @@ import axios from 'axios';
 export function Navedoctor() {
   const [quoteIndex, setQuoteIndex] = useState(0);
   const [diseaseName, setDiseaseName] = useState('');
-
+const username = localStorage.getItem('username');
   const quotes = [
     "Your mental health is a priority. Don't forget to take care of yourself.",
   "Making a difference in someone's life is one of the greatest rewards there is. Embrace the power of your profession to help others heal and find hope.",
@@ -56,7 +56,13 @@ const handleSubmit = (e) => {
 
     return () => clearInterval(interval);
   }, []);
-
+    if (!username) {
+    return (
+      <div id='main'>
+        <p>Please sign in again.</p>
+      </div>
+    );
+  }
   return (
     <div id='main'>
       <Navbar2 />
