@@ -31,7 +31,7 @@ function Navbar1() {
               </li>
               
             </ul>
-            <Link className="btn btn-danger" to="/" role="button">Sign Out</Link>
+            <Link className="btn btn-danger" to="/" onClick={handleLogout}>Sign Out</Link>
           </div>
         </div>
       </nav>
