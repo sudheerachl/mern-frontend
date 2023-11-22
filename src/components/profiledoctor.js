@@ -53,7 +53,7 @@ const Profiledoctor = () => {
 
   if (!userDetails) {
     return (<div>
-      <p>Loading user details...Please signin again.</p>
+      <p>Please signin again.</p>
           <a href="/signin" className="quiz-button">
             Proceed to signin
           </a></div>);
