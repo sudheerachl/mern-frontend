@@ -2,6 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar1() {
+  const handleLogout = () => {
+  localStorage.removeItem("username");
+  window.location.href = "/";
+};
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={{ borderBottom: 'white solid 0.6vw' }}>
