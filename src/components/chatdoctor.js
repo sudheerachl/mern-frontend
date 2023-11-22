@@ -28,7 +28,16 @@ const Testingdoctor = () => {
         // Handle error as needed
       });
   }, [username]);
-
+  if (!username) {
+    return (
+      <div id='main'>
+        <p>Please sign in again.</p>
+        <a href="/signin" className="quiz-button">
+            Proceed to signin
+          </a>
+      </div>
+    );
+  }
 return (
   <>
     <Navbar2 />
